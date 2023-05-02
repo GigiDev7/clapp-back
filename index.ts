@@ -5,7 +5,11 @@ import { errorHandler } from "./middlewares/errorHandler";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://classy-blini-4c28a0.netlify.app",
+  })
+);
 app.use(express.json());
 
 app.use("/user", userRouter);
