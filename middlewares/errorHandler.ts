@@ -1,8 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-
-export enum ErrorTypes {
-  NOTFOUND = "Not Found Error",
-}
+import { ErrorTypes } from "../utils/interfaces";
 
 export const errorHandler = (
   err: Error,

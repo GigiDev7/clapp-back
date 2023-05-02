@@ -1,7 +1,7 @@
 import fs from "fs/promises";
-import { IUser } from "../interfaces";
+import { IUser } from "../utils/interfaces";
 import { CustomError } from "../utils/customError";
-import { ErrorTypes } from "../middlewares/errorHandler";
+import { ErrorTypes } from "../utils/interfaces";
 
 //helper function to get read users from json file
 async function getUsersFromFile() {

@@ -9,3 +9,7 @@ export interface IUser {
     city: string;
   };
 }
+
+export enum ErrorTypes {
+  NOTFOUND = "Not Found Error",
+}
