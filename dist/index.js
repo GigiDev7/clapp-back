@@ -8,9 +8,7 @@ const cors_1 = __importDefault(require("cors"));
 const users_1 = __importDefault(require("./routes/users"));
 const errorHandler_1 = require("./middlewares/errorHandler");
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)({
-    origin: "https://classy-blini-4c28a0.netlify.app",
-}));
+app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use("/user", users_1.default);
 app.use(errorHandler_1.errorHandler);
